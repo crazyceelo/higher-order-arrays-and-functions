@@ -1,0 +1,22 @@
+{
+  "name": "higher-order-arrays-and-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "higherOrderArraysAndFunctions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyceelo/higher-order-arrays-and-functions.git"
+  },
+  "author": "Carlos Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crazyceelo/higher-order-arrays-and-functions/issues"
+  },
+  "homepage": "https://github.com/crazyceelo/higher-order-arrays-and-functions#readme",
+  "dependencies": {
+    "mma": "^0.2.0"
+  }
+}
