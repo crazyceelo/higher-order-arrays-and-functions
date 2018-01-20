@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/crazyceelo/higher-order-arrays-and-functions#readme",
   "dependencies": {
-    "mma": "^0.2.0"
+    "mma": "^0.2.0",
+    "require.js": "^1.0.0"
   }
 }
