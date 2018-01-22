@@ -165,6 +165,16 @@ mma.fighter('Luke Rockhold', function (f1) {
     //   return total + fighter.age;
     // }, 0);
     // console.log(totalAge);
+
+    // combine methods
+    const combined = fighters
+      .map(fighter => fighter.age * 2)
+      .filter(age => age >= 35)
+      .sort((a, b) => b - a)
+      .reduce((a, b) => a + b, 0);
+    
+    console.log(combined);
+
   });
 });
 
