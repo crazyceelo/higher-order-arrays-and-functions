@@ -62,7 +62,109 @@ mma.fighter('Luke Rockhold', function (f1) {
     //   }
     // });
 
+    // filter with return true
+    // const oldFighter = fighters.filter(function (fighter) {
+    //   if (fighter.age >= 35) {
+    //     return true;
+    //   }
+    // });
+    // console.log(oldFighter);
+
+    // const oldFighter = fighters.filter(fighter => fighter.age >= 35);
+    // console.log(oldFighter);
+
+    // const youngFighter = fighters.filter(fighter => (fighter.age >= 18 && fighter.age <= 35));
+
+     // let oldFighter = [];
+    // let youngFighter = [];
+    // for (let i = 0; i < fighters.length; i++){
+    //   if (fighters[i].age >= 35) {
+    //     oldFighter.push(fighters[i].name + " " + fighters[i].age);
+    //   }
+    //   else {
+    //     youngFighter.push(fighters[i].name + " " + fighters[i].age);
+    //   }
+    // }
+    // console.log(`old: ${oldFighter}`);
+    // console.log(`young: ${youngFighter}`);
+
+    // let oldFighter = [];
+    // let youngFighter = [];
+    // fighters.filter((fighter) => {
+    //   if (fighter.age >= 35) {
+    //     oldFighter.push(fighter.name, fighter.age);
+    //   }
+    //   else {
+    //     youngFighter.push(fighter.name, fighter.age);
+    //   }
+    // })
+    // console.log(oldFighter);
+    // console.log(youngFighter);
+
+    // map
+    // create array of fighter names
+    // const fighterNames = fighters.map(function (fighter) {
+    //   return fighter.name;
+    // });
+    // console.log(fighterNames);
+
+    // map
+    // const fighterTest = fighters.map(function (fighter) {
+    //   return `name: ${fighter.name} wins: ${fighter.wins.total} losses: ${fighter.losses.total}`;
+    // })
+    // console.log(fighterTest);
+
+    // map arrow function
+    // const fighterTest = fighters.map(fighter =>
+    //   `name: ${fighter.name} wins: ${fighter.wins.total} losses: ${fighter.losses.total}`);
+    // console.log(fighterTest);
+
+    // map 
+    // const fighterAgeAve = fighters.map(fighter => `name: ${fighter.name} age: ${fighter.age} age*2: ${fighter.age * 2}`);
+    // console.log(fighterAgeAve);
+
+    // sort
+    // const sortFighters = fighters.sort(function (f1, f2) {
+    //   if (f1.age > f2.age) {
+    //     return 1;
+    //   } else {
+    //     return -1
+    //   }
+    // })
+    // console.log(sortFighters);
+
+    // sort
+    // const sortedFighters = fighters.sort((a, b) => (a.age > b.age ? 1 : -1));
+    // console.log(sortedFighters);
+
+    // map age, then sort by age
+    // const fighterAge = fighters.map(fighter => fighter.age);
+    // console.log(fighterAge);
+    // const ageAscend = fighterAge.sort((a,b) => a-b);
+    // console.log(ageAscend);
+    // const ageDescend = fighterAge.sort((a,b) => b-a);
+    // console.log(ageDescend);
+
+    // reduce with for loop
+    // let ageSum = 0;
+    // for (let i = 0; i < fighterAge.length; i++){
+    //   ageSum += fighterAge[i];
+    // }
+    // console.log(ageSum);
+
+    // const ageSum = fighterAge.reduce(function (total, age) {
+    //   return total + age;
+    // }, 0);
+    // console.log(ageSum);
+
+    // const ageSum = fighterAge.reduce((total, age) => total + age, 0);
+    // console.log(ageSum);
     
+    // total years for fighters
+    // const totalAge = fighters.reduce(function (total, fighter) {
+    //   return total + fighter.age;
+    // }, 0);
+    // console.log(totalAge);
   });
 });
 
