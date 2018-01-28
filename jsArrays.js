@@ -1,14 +1,14 @@
 
 var mma = require('mma');
-var data = [];
-mma.fighter('Luke Rockhold', function (f1) {
+// var data = [];
+// mma.fighter('Luke Rockhold', function (f1) {
 // console.log(data);
 // console.log(f1.name);
-  mma.fighter('Yoel Romero', function (f2) {
-    var fighters = [];
+  // mma.fighter('Yoel Romero', function (f2) {
+    // var fighters = [];
     // console.log(f1.name + ' ' + f2.name);
-    fighters.push(f1);
-    fighters.push(f2);
+    // fighters.push(f1);
+    // fighters.push(f2);
     // console.log(fighters);
 
     // for loop to log each object.fighersName
@@ -167,16 +167,16 @@ mma.fighter('Luke Rockhold', function (f1) {
     // console.log(totalAge);
 
     // combine methods
-    const combined = fighters
-      .map(fighter => fighter.age * 2)
-      .filter(age => age >= 35)
-      .sort((a, b) => b - a)
-      .reduce((a, b) => a + b, 0);
+    // const combined = fighters
+    //   .map(fighter => fighter.age * 2)
+    //   .filter(age => age >= 35)
+    //   .sort((a, b) => b - a)
+    //   .reduce((a, b) => a + b, 0);
     
-    console.log(combined);
+    // console.log(combined);
 
-  });
-});
+//   });
+// });
 
 // mma.fighter('Yoel Romero', function (f2) {
 //   // console.log(f2.name);
@@ -245,3 +245,52 @@ mma.fighter('Luke Rockhold', function (f1) {
 // sort
 
 // reduce
+
+
+
+// valid promise
+function getFighter(fightername){
+  return new Promise((resolve, reject) => {
+      mma.fighter(fightername,(data) =>{
+          if(data){
+              resolve(data.name);
+          }else {
+              reject('rejected');
+          }
+      })
+  })
+};
+
+// multiple promise
+// Promise.all([
+//   getFighter('Jon Jones'),
+//   getFighter('Yoel Romero'),
+//   getFighter('Luke Rockhold')
+// ]).then((data)=>{
+//   console.log(`Promise.all function: ${data}`);
+// })
+
+
+// async await
+// async function test() {
+//   const [fighter1, fighter2, fighter3] = await Promise.all([
+//     getFighter('Jon Jones'),
+//     getFighter('Yoel Romero'),
+//     getFighter('Luke Rockhold')
+//   ]);
+//   console.log(fighter1);
+// }
+// test();
+
+
+// single promise
+// getFighter('Jon Jones').then(function(data){
+//   console.log(`Single Promise: ${data}`);
+// })
+
+// async await
+// async function test1() {
+//   const asdf = await getFighter("Jon Jones");
+//   console.log(asdf);
+// }
+// test1();
