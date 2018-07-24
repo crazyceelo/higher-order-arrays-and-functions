@@ -271,16 +271,16 @@ function getFighter(fightername){
 // })
 
 
-// async await
-// async function test() {
-//   const [fighter1, fighter2, fighter3] = await Promise.all([
-//     getFighter('Jon Jones'),
-//     getFighter('Yoel Romero'),
-//     getFighter('Luke Rockhold')
-//   ]);
-//   console.log(fighter1);
-// }
-// test();
+async await
+async function test() {
+  const [fighter1, fighter2, fighter3] = await Promise.all([
+    getFighter('Jon Jones'),
+    getFighter('Yoel Romero'),
+    getFighter('Luke Rockhold')
+  ]);
+  console.log(fighter1);
+}
+test();
 
 
 // single promise
