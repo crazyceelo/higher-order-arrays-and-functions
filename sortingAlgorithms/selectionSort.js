@@ -13,11 +13,11 @@ function selectionSort(array) {
     var min = i;
     for (var j = i + 1; j < array.length; j++) {
       if (array[j] < array[min]) {
-        count++;
         min = j;
       }
     }
     if (i !== min) {
+      count++;
       swap(array, i, min);
     }
   }
