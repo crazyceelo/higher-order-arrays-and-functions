@@ -1,4 +1,4 @@
-var selection = [4, 3, 1, 2];
+var arr = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
 var count = 0;
 
 // helper
@@ -17,11 +17,10 @@ function selectionSort(array) {
       }
     }
     if (i !== min) {
-      count++;
       swap(array, i, min);
     }
   }
-  return count;
+  return array;
 }
 
-console.log(selectionSort(selection));
+console.log(selectionSort(arr));
