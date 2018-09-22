@@ -1,5 +1,5 @@
-var arr = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
-
+var arr = [4, 3, 1, 2];
+var swapCount = 0;
 // top-down implementation
 function mergeSortTopDown(array) {
   if (array.length < 2) {

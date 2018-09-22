@@ -1,5 +1,5 @@
-var arr = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
-var count = 0;
+var arr = [4, 3, 1, 2];
+var swapCount = 0;
 
 // helper
 function swap(array, i, j) {
@@ -17,10 +17,12 @@ function selectionSort(array) {
       }
     }
     if (i !== min) {
+      swapCount++;
       swap(array, i, min);
     }
   }
-  return array;
+  // return array;
+  return swapCount;
 }
 
 console.log(selectionSort(arr));
