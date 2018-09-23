@@ -6,7 +6,7 @@ let swapCount = 0;
 // helper
 function swap(array, i, j) {
   swapCount++;
-  temp = array[i];
+  let temp = array[i];
   array[i] = array[j];
   array[j] = temp;
 }
