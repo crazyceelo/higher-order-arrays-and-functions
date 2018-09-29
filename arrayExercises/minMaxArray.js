@@ -29,3 +29,13 @@ function highAndLow3(numbers) {
 }
 
 console.log(highAndLow3(stringOfNumbers));
+
+// ------
+
+function highAndLow4(numbers) {
+  numbers = numbers.split(" ");
+
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
+
+console.log(highAndLow4(stringOfNumbers));
