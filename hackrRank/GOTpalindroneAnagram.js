@@ -35,4 +35,4 @@ function gameOfThronesAnagramPalindrome(s) {
   }
 }
 
-console.log(gameOfThronesAnagramPalindrome(x));
+console.log(gameOfThronesAnagramPalindrome(y));
