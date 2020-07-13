@@ -19,5 +19,8 @@
   "dependencies": {
     "mma": "^0.2.0",
     "require.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "@wdio/sync": "^6.1.8"
   }
 }

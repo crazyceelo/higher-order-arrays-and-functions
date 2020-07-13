@@ -20,48 +20,31 @@ function bubbleSort(array) {
     }
   }
   let test = array.join("");
-  // return test;
-  return swapCount;
+  return test;
 }
 
 console.log(bubbleSort(arr));
 
-// function bubbleSort2(array) {
-//   for (var i = 0; i < array.length; i++) {
-//     for (var j = 1; j < array.length; j++) {
-//       if (array[j - 1] > array[j]) {
-//         swap(array, j - 1, j);
-//       }
-//     }
-//   }
-//   let join = array.join(" ");
-//   return join;
-// }
 
-// console.log(bubbleSort2(arr));
 
-// function bubbleSort3(array) {
-//   for (var i = 0; i < array.length; i++) {
-//     for (var j = 1; j < array.length; j++) {
-//       if (array[j - 1] > array[j]) {
-//         swap(array, j - 1, j);
-//       }
-//     }
-//   }
-//   return array;
-// }
+//helper
+function swap2(array, i, j){
+  let temp = array[i]
+  array[i] = array[j]
+  array[j] = temp
+}
 
-// console.log(bubbleSort3(arr));
+function bubbleSort2(array){
+  for(let i = 0; i < array.length; i++){
+    for(let j = 1; j < array.length; j++){
+      if(array[j-1] > array[j]){
+        swap(array, j-1, j)
+      }
+    }
+  }
+  let test = array.join("")
+  return test
+}
 
-// function bubbleSort4(array) {
-//   for (var i = 0; i < array.length; i++) {
-//     for (var j = 1; j < array.length; j++) {
-//       if (array[j - 1] > array[j]) {
-//         swap(array, j - 1, j);
-//       }
-//     }
-//   }
-//   return array.join(" ");
-// }
 
-// console.log(bubbleSort4(arr));
+console.log(bubbleSort2(arr))

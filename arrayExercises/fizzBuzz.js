@@ -101,7 +101,7 @@ var arr = [
   "Buzz"
 ];
 
-if statement fizzbuzz
+//if statement fizzbuzz
 for (var i = 0; i < arr.length; i++) {
   if (arr[i] === "Fizz") {
     console.log(arr[i]);
